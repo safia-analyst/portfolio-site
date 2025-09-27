@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Safia Fars Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+/* ======== Global ======== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', 'Poppins', sans-serif;
+    background-color: #1E1E2E;
+    color: #FFFFFF;
+}
+a { color: #4CC9F0; text-decoration: none; transition: color 0.3s; }
+a:hover { color: #9D4EDD; }
+section { padding: 50px 20px; max-width: 1200px; margin: auto; }
+
+/* ======== Headings ======== */
+h1, h2, h3 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center; /* جعل العناوين في المنتصف */
+}
+h1 { font-size: 40px; }
+h2 { font-size: 30px; }
+h3 { font-size: 24px; }
+p { line-height: 1.6; font-size: 16px; color: #B0B0B0; text-align: center; }
+
+/* ======== Header ======== */
+header {
+    text-align: center;
+    padding: 60px 20px 40px 20px;
+    background-color: #111;
+}
+header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+header h2 { margin: 5px 0 20px 0; color: #B0B0B0; font-weight: 400; }
+header p { max-width: 600px; margin: 0 auto; font-size: 16px; color: #B0B0B0; }
+
+/* ======== Tools Section ======== */
+.tools-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+}
+.tools {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.tool {
+    background-color: #2A2A40;
+    padding: 15px;
+    border-radius: 10px;
+    width: 180px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.tool:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+.tool img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+.tool h3 {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #4CC9F0;
+}
+.tool p { font-size: 14px; color: #B0B0B0; }
+
+/* ======== Projects Section ======== */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    margin-top: 40px;
+}
+.project {
+    background-color: #2A2A40;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 320px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+.project img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transform: none;
+}
+.project h3 { margin-top: 15px; color: #4CC9F0; font-size: 22px; }
+.project p { margin-top: 10px; font-size: 16px; color: #B0B0B0; }
+.project a {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #4CC9F0;
+}
+.project a:hover { color: #9D4EDD; }
+
+/* ======== Contact ======== */
+.contact {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.contact a { font-size: 18px; font-weight: 600; color: #4CC9F0; }
+.contact a:hover { color: #9D4EDD; }
+
+/* ======== Responsive ======== */
+@media(max-width: 768px) {
+    .tools { flex-direction: column; align-items: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- ======== Header ======== -->
+<header>
+    <img src="images/logo.png" alt="Safia Logo">
+    <h1>Safia Fars</h1>
+    <h2>Junior Data & Business Analyst</h2>
+    <p>Junior Data Analyst, passionate about transforming data into actionable insights. Proficient in SQL, MySQL, Python, R, Excel, Power BI, and Tableau. Developed self-learning projects demonstrating ability to clean, analyze, and visualize data. Goal-oriented toward delivering insights that support growth and smarter decision-making.</p>
+</header>
+
+<!-- ======== Tools Section ======== -->
+<section>
+    <div class="tools-container">
+        <h2>Data Preparation TOOLS</h2>
+        <div class="tools">
+            <div class="tool">
+                <img src="images/my_sql.png" alt="MySQL Logo">
+                <h3>SQL</h3>
+                <p>Writing queries, filtering & joining datasets</p>
+            </div>
+            <div class="tool">
+                <img src="images/excel.png" alt="Excel Logo">
+                <h3>Excel</h3>
+                <p>Data cleaning, pivot tables, basic formulas</p>
+            </div>
+        </div>
+
+        <h2>Data Visualization Tools</h2>
+        <div class="tools">
+            <div class="tool">
+                <img src="images/power_bi.png" alt="Power BI Logo">
+                <h3>Power BI</h3>
+                <p>Building dashboards & visualizations</p>
+            </div>
+            <div class="tool">
+                <img src="images/tableau.png" alt="Tableau Logo">
+                <h3>Tableau</h3>
+                <p>Visual analytics</p>
+            </div>
+        </div>
+
+        <h2>Programming / Analytics TOOLS</h2>
+        <div class="tools">
+            <div class="tool">
+                <img src="images/python.png" alt="Python Logo">
+                <h3>Python</h3>
+                <p>Data analysis & automation basics</p>
+            </div>
+            <div class="tool">
+                <img src="images/R.png" alt="R Logo">
+                <h3>R</h3>
+                <p>Data analysis & statistics</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ======== Projects Section ======== -->
+<section>
+    <h2>Project Gallery</h2>
+    <div class="projects">
+
+        <div class="project">
+            <a href="https://github.com/safia-analyst/Layoffs-Data-Cleaning-with-SQL" target="_blank">
+                <img src="images/project1.png" alt="Global Layoffs Dashboard">
+                <img src="images/project1.2.png" alt="Global Layoffs Screenshot">
+            </a>
+            <h3>Global Layoffs Dashboard</h3>
+            <p>Interactive dashboard analyzing 1,995 companies & 383,000+ layoffs, providing insights into trends and geographic distribution.</p>
+        </div>
+
+        <div class="project">
+            <a href="https://github.com/safia-analyst" target="_blank">
+                <img src="images/project2.png" alt="Sales Performance Dashboard">
+                <img src="images/project2.2.png" alt="Sales Performance Screenshot">
+            </a>
+            <h3>Sales Performance Dashboard</h3>
+            <p>Interactive Excel dashboard analyzing $2.2M+ in sales data, providing insights on top-performing regions, trends, and KPIs.</p>
+        </div>
+
+        <div class="project">
+            <a href="https://github.com/AnalysisWithEmmanuel/MRI-Brain-Scan-Analysis/blob/main/README.md" target="_blank">
+                <img src="images/project3.png" alt="Tesla Cybertruck Sales">
+                <img src="images/project3.2.png" alt="Tesla Cybertruck Screenshot">
+            </a>
+            <h3>Tesla Cybertruck Sales</h3>
+            <p>Dashboard analyzing Tesla Cybertruck resale data across U.S. states, highlighting key metrics and market valuation trends.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ======== Contact Section ======== -->
+<section>
+    <h2>Let’s work together!</h2>
+    <div class="contact">
+        <a href="tel:+201288722441">📞 +201288722441</a>
+        <a href="mailto:safiafars16@gmail.com">📧 Email</a>
+        <a href="https://www.linkedin.com/in/AnalysisWithSafal" target="_blank">💼 LinkedIn</a>
+    </div>
+</section>
+
+</body>
+</html>
